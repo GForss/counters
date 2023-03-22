@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="cold">
+        <h2 class="title">Введите показания холодной воды</h2>
+        
+        <div class="form">
+            <div class="cold-water_img">
+                <img src="/img/counters hot.png" alt="">
+            </div>
+
+            <div class="form-first">
+                <input class="current-cold" type="text" id="cold" required>
+                <span class="span-first">Прошлые</span>
+            </div>
+
+            <div class="form-last">
+                <input class="past-cold" type="text" id="cold" required>
+                <span class="span-last">Нынешние</span>
+                <button class="cold-btn">Посчитать</button>
+            </div>
+        </div>
+        <div class="cold-water__result"></div>
+    </div>
+
+    <div class="hot-water">
+        <h2 class="title">Введите показания горячей воды</h2>
+        
+        <div class="form">
+            <div class="hot-water_img">
+                <img src="/img/counters hot.png" alt="">
+            </div>
+
+            <div class="form-first">
+                <input class="current-hot" type="text" id="cold" required>
+                <span class="span-first">Прошлые</span>
+            </div>
+
+            <div class="form-last">
+                <input class="past-hot" type="text" id="cold" required>
+                <span class="span-last">Нынешние</span>
+                <button class="hot-btn">Посчитать</button>
+            </div>
+        </div>
+        <div class="hot-water__result"></div>
+    </div>
+
+    <div class="light">
+        <h2 class="title">Введите показания света</h2>
+        
+        <div class="form">
+            <div class="cold-water_img">
+                <img src="/img/counters light.png" alt="">
+            </div>
+
+            <div class="form-first">
+                <input class="current-light" type="text" id="cold" required>
+                <span class="span-first">Прошлые</span>
+            </div>
+
+            <div class="form-last">
+                <input class="past-light" type="text" id="cold" required>
+                <span class="span-last">Нынешние</span>
+                <button class="light-btn">Посчитать</button>
+            </div>
+        </div> 
+        <div class="light__result"></div>
+    </div>
+
+    <div class="all-money">
+        <button class="all-money__button">Посчитать всю сумму</button>
+        <div class="all-money__text"></div>
+    </div>
+
+
+    <button class="indications__button">Записать показания</button>    
+    <div class="indications">
+
+        <div class="indications__cold-water">Холодная вода
+            <ul class="indications__cold-water_li">
+
+            </ul>
+        </div>
+        <div class="indications__hot-water">Горячая вода
+            <ul class="indications__hot-water_li">
+
+            </ul>
+        </div>
+        <div class="indications__light">Свет
+            <ul class="indications__light_li">
+
+            </ul>
+        </div>
+        <button class="clear">Очистить</button>
+
+    </div>
+
+    <div class="capibara">
+        <img class="capibara_img" src="img/kapibara.png" alt="">
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
