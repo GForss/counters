@@ -9,8 +9,12 @@ let cold = {
 cold.btn.addEventListener('click', calculationCold);
 
 function calculationCold() {
-    cold.displau.innerHTML = `Вы должны оплатить ${(cold.pastCold.value - cold.currentCold.value) * cold.rates} рублей`;
-
+    if(cold.currentCold.value > cold.pastCold.value) {
+        alert('Ошибка: нынешние показания не могуть быть меньше прошлых!');
+    } else {
+        cold.displau.innerHTML = `Вы должны оплатить ${(cold.pastCold.value - cold.currentCold.value) * cold.rates} рублей`;
+    }
+    
     displauCapibara();
 }
 
@@ -26,7 +30,11 @@ let hot = {
 hot.btn.addEventListener('click', calculationHot);
 
 function calculationHot() {
-    hot.displau.innerHTML = `Вы должны оплатить ${(hot.pastHot.value - hot.currentHot.value) * hot.rates} рублей`;
+    if(hot.currentHot.value > hot.pastHot.value) {
+        alert('Ошибка: нынешние показания не могуть быть меньше прошлых!');
+    } else {
+        hot.displau.innerHTML = `Вы должны оплатить ${(hot.pastHot.value - hot.currentHot.value) * hot.rates} рублей`;
+    }
 
     displauCapibara();
 }
@@ -43,7 +51,11 @@ let light = {
 light.btn.addEventListener('click', calculationLight);
 
 function calculationLight() {
-    light.displau.innerHTML = `Вы должны оплатить ${(light.pastLight.value - light.currentLight.value) * light.rates} рублей`;
+    if(light.currentLight.value > light.pastLight.value) {
+        alert('Ошибка: нынешние показания не могуть быть меньше прошлых!');
+    } else {
+        light.displau.innerHTML = `Вы должны оплатить ${(light.pastLight.value - light.currentLight.value) * light.rates} рублей`;
+    }    
 
     displauCapibara();
 }
@@ -146,4 +158,3 @@ function displauCapibara() {
         capibara.classList.remove("capibara_display");
     }
 }
-
