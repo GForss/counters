@@ -99,7 +99,8 @@ input::placeholder {
 .cold-btn,
 .hot-btn,
 .light-btn,
-.clear {
+.clear,
+.pdf {
   width: 100px;
   height: 50px;
   border: 2px solid #5680E9;
