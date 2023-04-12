@@ -173,3 +173,15 @@ ul {
 .indications__light_li {
     list-style: none;
 }
+
+@media (max-width: 760px) and (min-width: 350px) {
+    .form {
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .indications {
+        flex-direction: column;
+    }
+}

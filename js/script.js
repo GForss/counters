@@ -172,8 +172,6 @@ doc.addFileToVFS('ArialMT-normal.ttf', font);
 doc.addFont('ArialMT-normal.ttf', 'ArialMT', 'normal');
 doc.setFont('ArialMT');
 
-let text = `Вы должны оплатить ${(cold.pastCold.value - cold.currentCold.value) * cold.rates} рублей`;
-
 // Сохраняем документ в формате PDF при нажатии на кнопку
 document.getElementById("download-btn").addEventListener("click", () => {
 
@@ -185,7 +183,7 @@ if(hot.displau.innerHTML.length > 0) {
 } 
 if(light.displau.innerHTML.length > 0) {
     doc.text(`\n \n${light.displau.innerHTML} за свет`, 10, 10);
-} 
+}
 
   doc.save("calculation.pdf");
 });
